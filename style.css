@@ -1,0 +1,134 @@
+/* Réinitialisation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fff0f5, #fbd1df, #ffe4ec);
+    color: #c44575;
+    min-height: 100vh;
+}
+
+/* Barre de navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 4px 15px rgba(196, 69, 117, 0.08);
+}
+
+/* Logo */
+.logo {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-style: italic;
+    color: #d94f83;
+}
+
+/* Menu */
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #c44575;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff80ab;
+}
+
+/* Contenu principal */
+main {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Petit cœur décoratif */
+.coeur {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #ed709c;
+}
+
+/* Titre principal */
+h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(48px, 8vw, 100px);
+    color: #d94f83;
+    margin-bottom: 15px;
+}
+
+/* Sous-titre */
+.sous-titre {
+    font-size: 20px;
+    letter-spacing: 6px;
+    margin-bottom: 30px;
+    color: #e56b98;
+}
+
+/* Description */
+.description {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 600px;
+    margin-bottom: 35px;
+    color: #b84d76;
+}
+
+/* Bouton */
+.bouton {
+    display: inline-block;
+    background: linear-gradient(135deg, #f58bb0, #df4f86);
+    color: white;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-size: 18px;
+    box-shadow: 0 6px 18px rgba(217, 79, 131, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bouton:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(217, 79, 131, 0.3);
+}
+
+/* Adaptation aux téléphones */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .sous-titre {
+        font-size: 15px;
+        letter-spacing: 4px;
+    }
+}
